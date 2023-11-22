@@ -44,7 +44,7 @@ struct SplashView: View {
                     }
                     
                 }.scaleEffect(size).opacity(opacity).onAppear {
-                    withAnimation(.easeIn(duration: 1.2)) {
+                    withAnimation(.easeInOut(duration: 1.2)) {
                         self.size = 0.9
                         self.opacity = 1
                     }
